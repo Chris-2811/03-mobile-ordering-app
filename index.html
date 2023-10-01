@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Jimmy's Diner</h1>
+      <p>The best burgers and pizzas in town</p>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Section select -->
+        <section class="select">
+          <div id="menu-items-list">
+            
+        </section>
+        <!-- Section order  -->
+        <section class="order" hidden>
+          <h2>Your order</h2>
+          <div id="bill">
+            <div id="order-list"></div>
+            <div class="divider"></div>
+            <div class="price-container">
+              <p>Total price:</p>
+              <div id="total-price" class="price">$0</div>
+            </div>
+          </div>
+          <button class="btn-primary" id="order-btn">Complete order</button>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal" id="modal">
+          <form id="form">
+            <h2>Enter card details</h2>
+            <div class="form-control">
+              <input type="text" placeholder="Enter your name" name="name" id="name">
+            </div>
+            <div class="form-control">
+              <input type="number" placeholder="Enter card number" name="card-number" id="card-number">
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Enter CVV" name="cvv" id="cvv">
+            </div>
+            <button type="submit" class="btn-primary" id="pay-btn">Pay</button>
+          </form>
+
+          <div class="alert" id="alert">Please enter all fields</div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

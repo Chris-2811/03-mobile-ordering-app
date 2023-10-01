@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-size: 39px;
+  margin-bottom: 19px;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: 'Smythe', sans-serif;
+  font-size: 28px;
+}
+
+header {
+  background-image: url(images/burger.jpeg);
+  background-size: cover;
+  background-position: center bottom -80px;
+  background-repeat: no-repeat;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 46px;
+}
+
+header p {
+  font-size: 23px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 45px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.btn-primary {
+  background: #16db99;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding-block: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 53px;
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Section select */
+
+.select .option {
+  display: flex;
+  align-items: center;
+  margin-top: 52px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.select .option > p {
+  font-size: 79px;
+  margin-right: 31px;
+}
+
+.select .option > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.select h3 {
+  font-size: 28px;
+  line-height: 17px;
+}
+
+.select .toppings {
+  color: #8b8b8b;
+  margin-block: 8px;
+  font-size: 1rem;
+}
+
+.select .price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.select .add-btn {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #dedede;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+/* Section order */
+
+.order {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.order h2 {
+  font-size: 28px;
+  color: #000;
+  line-height: 17px;
+  margin-bottom: 62px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.order-item > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 17px;
+}
+
+.order-item > div small {
+  color: #bbb;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.order .divider {
+  background-color: #393333;
+  height: 2px;
+  width: 100%;
+  margin-block: 28px 14px;
+}
+
+.order .price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: absolute;
+  width: 527px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 47px 25px 30px 25px;
+  z-index: 100;
+  border-radius: 4px;
+  filter: drop-shadow(
+    5.186544418334961px 5.186544418334961px 255.43731689453125px
+      rgba(0, 0, 0, 0.5)
+  );
+}
+
+.modal h2 {
+  margin-bottom: 46px;
+}
+
+.modal input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #757575;
+  font-size: 20px;
+  width: 100%;
+  padding-block: 17px;
+  margin-bottom: 23px;
+  padding-inline: 26px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal .btn-primary {
+  margin-top: 0;
+}
+
+.alert {
+  display: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 52px;
+  right: 25px;
+  padding: 10px 20px;
+  border: 1px solid red;
+  border-radius: 6px;
+  color: red;
+  font-size: 1rem;
+}
+
+.message {
+  background-color: #ecfdf5;
+  padding: 50px 60px;
+  border-radius: 3px;
+  color: #065f46;
+  font-size: 32px;
+}
