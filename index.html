@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Vite App</title>
   </head>
   <body>
@@ -17,8 +17,7 @@
       <div class="container">
         <!-- Section select -->
         <section class="select">
-          <div id="menu-items-list">
-            
+          <div id="menu-items-list"></div>
         </section>
         <!-- Section order  -->
         <section class="order" hidden>
@@ -39,13 +38,23 @@
           <form id="form">
             <h2>Enter card details</h2>
             <div class="form-control">
-              <input type="text" placeholder="Enter your name" name="name" id="name">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                id="name"
+              />
             </div>
             <div class="form-control">
-              <input type="number" placeholder="Enter card number" name="card-number" id="card-number">
+              <input
+                type="number"
+                placeholder="Enter card number"
+                name="card-number"
+                id="card-number"
+              />
             </div>
             <div class="form-control">
-              <input type="text" placeholder="Enter CVV" name="cvv" id="cvv">
+              <input type="text" placeholder="Enter CVV" name="cvv" id="cvv" />
             </div>
             <button type="submit" class="btn-primary" id="pay-btn">Pay</button>
           </form>
