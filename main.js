@@ -1,4 +1,4 @@
-import { menuArray } from './menuArray';
+import { menuArray } from './menuArray.js';
 
 const menuItemsList = document.getElementById('menu-items-list');
 const orderList = document.getElementById('order-list');
